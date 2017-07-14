@@ -1,1 +1,34 @@
-$min-width: 970px;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+	min-width: 970px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 68px;
+	background: #FFE680;
+}
+
+.content {
+	border: 1px solid $blue; /* синий бордюр */
+	color: darken($blue, 20%); /* затемнение цвета на 20% */
+}
+
+.border {
+	padding: $margin / 2;
+	margin: $margin / 2;
+	border-color: $blue;
+}

@@ -1,14 +1,75 @@
-$blue: #3bbfce; /* цвет */
-$margin: 16px; /* отступ */
-$fontSize: 14px; /* размер текста */
 
-.content {
-	border: 1px solid $blue; /* синий бордюр */
-	color: darken($blue, 20%); /* затемнение цвета на 20% */
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.border {
-	padding: $margin / 2;
-	margin: $margin / 2;
-	border-color: $blue;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+	min-width: 970px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 68px;
+	background: #FFE680;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.middle {
+	width: 100%;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 270px 0 270px;
+}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+
+.left-sidebar {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	background: #B5E3FF;
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar {
+	float: left;
+	width: 250px;
+	margin-left: -250px;
+	position: relative;
+	background: #FFACAA;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 100px;
+	background: #BFF08E;
 }
