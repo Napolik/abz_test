@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* цвет */
+/* отступ */
+/* размер текста */
+/* line 5, style.scss */
+.content {
+  border: 1px solid #3bbfce;
+  /* синий бордюр */
+  color: #217882;
+  /* затемнение цвета на 20% */ }
+
+/* line 10, style.scss */
+.border {
+  padding: 8px;
+  margin: 8px;
+  border-color: #3bbfce; }
+
+/*# sourceMappingURL=style.css.map */
